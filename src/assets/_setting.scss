@@ -1,0 +1,23 @@
+@mixin max-media($width) {
+  @media (max-width: $width + 'px') {
+    @content;
+  }
+}
+
+@mixin min-media($width) {
+  @media (min-width: $width + 'px') {
+    @content;
+  }
+}
+
+@mixin mm-media($minWidth, $maxWidth) {
+  @media (min-width: $minWidth + 'px') and (max-width: $maxWidth + 'px') {
+    @content;
+  }
+}
+
+@mixin transition($speed: 0.5s) {
+  transition: all $speed ease-in-out;
+}
+
+$blue: #678c99;
