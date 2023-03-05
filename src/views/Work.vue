@@ -8,7 +8,7 @@ import 'swiper/css'
 const getImgUrl = (name) => {
   return new URL(name, import.meta.url).href
 }
-const workLists = ref([
+const workLists = [
   {
     title: '歌唱大賽',
     list: ['＃全站網頁前端製作', '＃vue.js', '＃nuxt'],
@@ -93,7 +93,7 @@ const workLists = ref([
     listImg: getImgUrl('../assets/images/work/hilai.jpg'),
     isShow: false
   }
-])
+]
 const activeIndex = ref(0)
 
 const onSlideChange = (swiper) => {
