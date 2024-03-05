@@ -9,20 +9,29 @@ const getImgUrl = (name) => {
   return new URL(name, import.meta.url).href
 }
 const workLists = [
+  // {
+  //   title: '歌唱大賽',
+  //   list: ['＃全站網頁前端製作', '＃vue.js', '＃nuxt'],
+  //   text: ``,
+  //   link: 'https://singocac.tw/',
+  //   bg: getImgUrl('../assets/images/work/singBg.jpg'),
+  //   listImg: getImgUrl('../assets/images/work/sing.jpg'),
+  //   isShow: true
+  // },
   {
-    title: '歌唱大賽',
+    title: 'IW 傢飾',
     list: ['＃全站網頁前端製作', '＃vue.js', '＃nuxt'],
     text: ``,
-    link: 'https://singocac.tw/',
-    bg: getImgUrl('../assets/images/work/singBg.jpg'),
-    listImg: getImgUrl('../assets/images/work/sing.jpg'),
+    link: 'https://www.iw-space.com/',
+    bg: getImgUrl('../assets/images/work/iwBg.jpg'),
+    listImg: getImgUrl('../assets/images/work/iw.jpg'),
     isShow: true
   },
   {
     title: 'CTS',
     list: ['＃全站網頁前端製作', '＃vue.js'],
     text: ``,
-    link: 'https://www.ctsystem.com/',
+    link: 'https://www.ctsystem.com/en/',
     bg: getImgUrl('../assets/images/work/ctsBg.jpg'),
     listImg: getImgUrl('../assets/images/work/cts.jpg'),
     isShow: true
@@ -79,7 +88,7 @@ const workLists = [
     title: '日月潭湖悅',
     list: ['＃全站網頁前端製作', '＃PHP、MySQL'],
     text: `根據設計稿製作網站版型，並調整網頁整體動畫速率呈現優雅風格`,
-    link: 'http://www.huyue.com.tw/',
+    link: 'https://www.huyue.com.tw/',
     bg: getImgUrl('../assets/images/work/huyueBg.jpg'),
     listImg: getImgUrl('../assets/images/work/huyue.jpg'),
     isShow: false
