@@ -41,8 +41,14 @@ setTimeout(() => {
   transform: translateY(-15px);
   opacity: 0;
   transition: all 1s ease-in-out;
+  @include max-media(767) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    right: 20px;
+  }
   &.show {
-  transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
   a {
@@ -53,6 +59,9 @@ setTimeout(() => {
     letter-spacing: 0.2em;
     margin-left: 35px;
     text-transform: uppercase;
+    @include max-media(480) {
+      font-size: 16px;
+    }
     &::after {
       content: '';
       position: absolute;

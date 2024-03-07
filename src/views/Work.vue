@@ -141,10 +141,18 @@ const modules = [Navigation]
     <div class="work__rightBox">
       <swiper
         :modules="modules"
-        :slides-per-view="4"
+        :slides-per-view="2"
         :space-between="0"
         :loop="true"
         :slideToClickedSlide="true"
+        :breakpoints="{
+          768: {
+            slidesPerView: 4
+          },
+          641: {
+            slidesPerView: 3
+          }
+        }"
         :navigation="{ nextEl: '.nextArrow', prevEl: '.prevArrow' }"
         class="work__list"
         @slideChange="onSlideChange"
@@ -205,13 +213,15 @@ const modules = [Navigation]
     @include min-media(1181) {
       width: calc(100% + (100% / 4));
     }
+    @include max-media(1180) {
+      width: calc(100% + (100% / 5));
+      padding-left: 20px;
+    }
     @include max-media(767) {
       margin-left: -8px;
       margin-right: -8px;
     }
     @include max-media(640) {
-      width: calc(100% + (100% / 5));
-      padding-left: 20px;
     }
     .swiper-slide {
       position: relative;

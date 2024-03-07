@@ -174,10 +174,15 @@ const job = ref([
   }
   &__inner {
     width: 100%;
-    max-width: 800px;
+    max-width: 840px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include max-media(1180) {
+      padding-top: 80px;
+    }
   }
   &__content {
     position: relative;

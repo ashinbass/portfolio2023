@@ -123,13 +123,16 @@ onMounted(() => {
     .home {
       &__box {
         width: 100%;
+        @include max-media(640) {
+          width: calc(100% - 40px);
+        }
       }
       &__hello {
         opacity: 1;
         filter: blur(0);
         transform: scale(1);
         letter-spacing: 0em;
-        transition-delay: .8s;
+        transition-delay: 0.8s;
       }
       &__button {
         &::before {
@@ -143,8 +146,8 @@ onMounted(() => {
         a {
           span {
             opacity: 1;
-          transform: translateY(0);
-          transition-delay: 1.8s;
+            transform: translateY(0);
+            transition-delay: 1.8s;
           }
         }
       }
